@@ -6,6 +6,7 @@ public class dragonmovement : MonoBehaviour
 {
     Transform curNodeTarget;
     public Transform[] waypoints;
+    public Transform dragonModel;
     int curNodeIndex = 0;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class dragonmovement : MonoBehaviour
 
         //Fixes direction dragon is looking
         Vector3 forward = target - transform.position;
-        transform.rotation = Quaternion.LookRotation(forward);
+        dragonModel.transform.rotation = Quaternion.LookRotation(forward);
 
         if (Vector3.Distance(target,transform.position) < .1f )
         {

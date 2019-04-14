@@ -27,7 +27,11 @@ public class FireDragon : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         transform.LookAt(other.transform);
-        enemyDragon.TakeDamage(fireDamage);
+        if (other.CompareTag("Enemy"))
+        {
+            enemyDragon.TakeDamage(fireDamage);
+        }
+        
 
     }
     

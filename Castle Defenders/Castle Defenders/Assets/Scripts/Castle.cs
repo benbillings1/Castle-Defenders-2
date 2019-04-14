@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyDragon : MonoBehaviour
+public class Castle : MonoBehaviour
 {
     private float startHealth = 100;
 
-    public float damage = 10;
     public float health;
+
     public Image healthBar;
 
 
@@ -18,7 +18,7 @@ public class EnemyDragon : MonoBehaviour
     }
 
 
-    public void TakeDamage (float amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
 
@@ -26,4 +26,9 @@ public class EnemyDragon : MonoBehaviour
 
 
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+        //TakeDamage(EnemyDragon.damage);
+    //}
 }

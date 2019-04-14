@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\EnemyDragon.cs" />
     <Compile Include="Assets\Scripts\FireDragon.cs" />
     <Compile Include="Assets\Scripts\PlayerDragon.cs" />
+    <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <None Include="Assets\Imports\citations.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Benjamin/Documents/Castle Defenders v.2/Castle Defenders/Castle Defenders/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
